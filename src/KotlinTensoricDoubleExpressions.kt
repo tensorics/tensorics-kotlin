@@ -64,21 +64,21 @@ operator fun Double.minus(right: Expression<Double>): Expression<Double> {
 
 /* left exp of quantified values, right exp of quantified values */
 
-operator fun Expression<QuantifiedValue<Double>>.plus(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
-	return TensoricDoubleExpressions.calculateQ(this).plus(right);
-}
-
-operator fun Expression<QuantifiedValue<Double>>.minus(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
-	return TensoricDoubleExpressions.calculateQ(this).minus(right);
-}
-
-operator fun Expression<QuantifiedValue<Double>>.times(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
-	return TensoricDoubleExpressions.calculateQ(this).times(right);
-}
-
-operator fun Expression<QuantifiedValue<Double>>.div(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
-	return TensoricDoubleExpressions.calculateQ(this).dividedBy(right);
-}
+//operator fun Expression<QuantifiedValue<Double>>.plus(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
+//	return TensoricDoubleExpressions.calculateQ(this).plus(right);
+//}
+//
+//operator fun Expression<QuantifiedValue<Double>>.minus(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
+//	return TensoricDoubleExpressions.calculateQ(this).minus(right);
+//}
+//
+//operator fun Expression<QuantifiedValue<Double>>.times(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
+//	return TensoricDoubleExpressions.calculateQ(this).times(right);
+//}
+//
+//operator fun Expression<QuantifiedValue<Double>>.div(right: Expression<QuantifiedValue<Double>>): Expression<QuantifiedValue<Double>> {
+//	return TensoricDoubleExpressions.calculateQ(this).dividedBy(right);
+//}
 
 /* left exp of quantified value of doubles, right quantified value */
 
@@ -146,21 +146,21 @@ operator fun QuantifiedValue<Double>.div(right: Expression<QuantifiedValue<Doubl
 
 /* left exp of tensors of double */
 
-operator fun Expression<Tensor<Double>>.plus(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
-	return TensoricDoubleExpressions.calculateT(this).plus(right);
-}
+//operator fun Expression<Tensor<Double>>.plus(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
+//	return TensoricDoubleExpressions.calculateT(this).plus(right);
+//}
 
  fun Expression<Tensor<Double>>.elementTimes(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
 	return TensoricDoubleExpressions.calculateT(this).elementTimes(right);
 }
 
- fun Expression<Tensor<Double>>.dividedBy(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
+fun Expression<Tensor<Double>>.dividedBy(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
 	return TensoricDoubleExpressions.calculateT(this).elementDividedBy(right);
 }
 
-operator fun Expression<Tensor<Double>>.minus(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
-	return TensoricDoubleExpressions.calculateT(this).minus(right);
-}
+//operator fun Expression<Tensor<Double>>.minus(right: Expression<Tensor<Double>>): Expression<Tensor<Double>> {
+//	return TensoricDoubleExpressions.calculateT(this).minus(right);
+//}
 
 /* iterable methods */
 
